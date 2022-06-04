@@ -14,9 +14,10 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import image from "./img.jpg";
 
 function App() {
-  const pages = ["Products", "Pricing", "Blog"];
+  const pages = ["Home", "About", "Contact Us"];
   const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -58,7 +59,7 @@ function App() {
                 textDecoration: "none",
               }}
             >
-              LOGO
+              LOGIN
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -163,7 +164,7 @@ function App() {
 
       <div className="main-div">
         <div className="div1">
-          hello 
+          <img src={image} height="90%" width="100%"></img> 
         </div>
         <div className="div">
           <Box
